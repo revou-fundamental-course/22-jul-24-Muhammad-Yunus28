@@ -1,0 +1,129 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 5px solid #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20;
+    margin: 20;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #000000;
+}
+
+.banner-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    animation: slide 15s infinite;
+}
+
+.banner img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+.package {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 3px solid #ccc;
+    cursor: pointer;
+}
+
+.package h3 {
+    margin: 8;
+}
+
+.package img {
+    width: 100%;
+    height: auto;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.package.active img {
+    display: block;
+    opacity: 1;
+}
+
+.package-detail {
+    display: none;
+    margin-top: 10px;
+}
+
+.package.active .package-detail {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form select, form button {
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form label, form input, form select, form button {
+        width: 100%;
+    }
+}

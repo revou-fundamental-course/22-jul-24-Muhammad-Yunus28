@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-package">Our Package</a></li>
+                <li><a href="#contact">Call Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner-container">
+            <div class="banner">
+                <img src="images/banner1.jpg" alt="Banner 1">
+                <img src="images/banner2.jpg" alt="Banner 2">
+                <img src="images/banner3.jpg" alt="Banner 3">
+            </div>
+        </div>
+        <h1>Your Trusted Travel Agent's</h1>
+        <p>Your happiness is our happiness</p>
+    </section>
+
+    <section id="our-package">
+        <h2>Our Packages</h2>
+        <div class="package" id="package1">
+            <h3>Beach Getaway</h3>
+            <img src="images/beach.jpg" alt="Beach" class="package-image">
+            <p class="package-detail">Enjoy the sun, sand, and sea with our exclusive beach getaway package.</p>
+        </div>
+        <div class="package" id="package2">
+            <h3>Mountain Adventure</h3>
+            <img src="images/mountain.jpg" alt="Mountain" class="package-image">
+            <p class="package-detail">Experience the thrill of mountain climbing and breathtaking views.</p>
+        </div>
+        <div class="package" id="package3">
+            <h3>City Exploration</h3>
+            <img src="images/city.jpg" alt="City" class="package-image">
+            <p class="package-detail">Discover the culture, food, and sights of vibrant cities around the world.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="destination">What are you interested in?</label>
+            <select id="destination" name="destination" required>
+                <option value="">Select option</option>
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountain</option>
+                <option value="city">City</option>
+            </select>
+            
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
